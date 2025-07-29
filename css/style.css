@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: darkgray;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  background-color: darkgreen;
+  padding: 30px;
+  text-align: center;
+  color: aliceblue;
+}
+
+#title {
+  text-align: center;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/*  ################## */
+
+.container {
+  margin-top: 50px;
+  justify-content: center;
+  flex: 1;
+  display: flex;
+  border-radius: 5px;
+}
+
+form {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field-name {
+  margin-bottom: 20px;
+}
+
+/* BODY FORM */
+
+#nome {
+  width: 61%;
+}
+
+#email {
+  width: 30%;
+}
+
+#field-telefone {
+  width: 20%;
+}
+
+#nbI {
+  width: 10%;
+}
+
+/* FIELD SOBRE */
+
+.texto {
+  background-color: aliceblue;
+  padding: 40px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 9% 20% 10% 20%;
+}
+
+/* MENU-LOGIN */
+
+.container-consulta {
+  background-color: aliceblue;
+  border-radius: 5px;
+  height: 30%;
+  text-align: center;
+  margin: 10% 40% 10% 40%;
+}
+
+#menu-login {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#sub-menu {
+  margin-top: 30px;
+}
+
+
+/* #################### */
+
+footer {
+  background-color: darkgreen;
+  padding: 20px;
+  text-align: center;
+  color: aliceblue;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+  }
+  
+
+  #email {
+    width: 60%;
+  }
+
+  #field-telefone {
+    width: 50%;
+  }
+
+  .container-consulta {
+    width: 50%;
+    margin: 25% 30% 50% 25%;
+  }
+
+  a {
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 100%;
+    color: black;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .imagem {
+    width: 0px;
+  }
+
+  .texto {
+    display: block;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 20% 10%;
+    text-align: left;
+  }
+
+  #btn-enviar {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  footer {
+    font-size: 8px;
+    padding: 30px;
+  }
+
+}
